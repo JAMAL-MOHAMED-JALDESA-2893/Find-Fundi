@@ -35,10 +35,10 @@
     opacity: 1;
 }
 .member:first-child{
-    align-items: flex-end;
+    align-items: flex-start;
 }
 .member:last-child{
-    align-items: flex-start;
+    align-items: flex-end;
 }
 /* styling image1 */
 .img{
@@ -127,4 +127,7 @@
   text-align: justify;
   letter-spacing: 0.1rem;
   text-indent: 2rem;
+}
+.footer{
+    padding: 0.9rem;
 }
