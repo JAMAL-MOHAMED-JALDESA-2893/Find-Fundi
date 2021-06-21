@@ -11,11 +11,18 @@
     <section class="ContactFundi" id="Reach">
         <h1 class="ContactHeading">CONTACT FUNDI</h1>
         <div class="container">
-            <form class="ContactForm">
+            <form class="ContactForm" onsubmit="myFunction()">
                 <input type="text" placeholder="Your Name">
                 <input type="number" placeholder="Phone Number">
                 <input type="email" placeholder="Your Email">
+                <textarea placeholder="Your Phone's Problem"></textarea>
+                <input type="submit" value="Send">
             </form>
+            <script>
+                function myFunction() {
+                  alert("Your phone's problem have been submitted to an Expert, you will be contacted soon.");
+                }
+            </script>
         </div>
     </section>
 </body>
