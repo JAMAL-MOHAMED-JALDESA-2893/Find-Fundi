@@ -14,7 +14,7 @@
     align-items: center;
     height: 70vh;
   }
-  /*
+  
   
   .customer {
     width: 35rem;
@@ -28,7 +28,7 @@
     box-shadow: 2px 2px 5px #ddd, -2px -2px 5px #eee;
     transition: box-shadow 0.5s;
   }
-  
+  /*
   .customer:hover {
     box-shadow: 2rem 2rem 3rem rgb(118, 177, 139), -2rem -2rem 3rem rgb(78, 116, 91);
   }
@@ -59,8 +59,9 @@
   .customer-rating {
     font-size: 2rem;
     color: #7c8266;
-  }
-  
+  } 
+  */
+
   .customer-img {
     width: 10rem;
     height: 15rem;
@@ -70,7 +71,6 @@
     border-style:groove;
   }
   
-  
   .customer-name {
     font-size: 3rem;
     font-weight: 700;
@@ -79,9 +79,8 @@
 
   /* Common Styles */
 
-/*@import url("https://fonts.googleapis.com/css2?family=Bellota+Text:wght@300;400;700&family=Monoton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bellota+Text:wght@300;400;700&family=Monoton&display=swap");
 
-/*
 * {
   margin: 0;
   padding: 0;
