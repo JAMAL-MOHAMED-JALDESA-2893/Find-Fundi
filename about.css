@@ -44,15 +44,10 @@ html {
 .member-name span{
     font-size: 25px;
 }  
-/* .specialization{
-  display: flex;
-  justify-content: space-between;
-  margin: 1rem 0 2rem 0;
+/* background page */
+body{
+  background-color: #babaa8;
 }
-.specialization li{
-    font-size: 1.5rem;
-    color: #505050;
-} */
 .btn{
 
     background-color: #7c8266;
@@ -130,7 +125,7 @@ html {
   color: #505050;
 }
 
-.btn {
+.project-btn {
   background-color: #7c8266;
   color: #fff;
   padding: 0.5rem 1.5rem;
@@ -139,7 +134,7 @@ html {
   letter-spacing: 0.2rem;
 }
 
-.more-btn {
+.story-btn {
   width: 4rem;
   height: 4rem;
   background-color:#7c8266;
@@ -201,6 +196,12 @@ html {
   text-align: justify;
   letter-spacing: 0.1rem;
   text-indent: 2rem;
+}
+h4{
+  color:#796717;
+  font-size: 25px;
+  padding-left: 20px;
+  opacity: 1;
 }
 /* End of Section 3 */
 
