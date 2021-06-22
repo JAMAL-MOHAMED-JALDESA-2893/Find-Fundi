@@ -43,3 +43,30 @@ html {
 
   position: relative;
 }
+
+.navbar {
+  position: relative;
+  z-index: 20;
+  top: 4rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navbar-link {
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  color: #262c0e;
+  width: 1.5rem;
+ /* word-wrap: break-word;*/
+  text-align: center;
+  /*transition: all 0.1s;*/
+}
+
+.navbar-link:hover {
+  width: 10rem;
+  background-color: #7c8266;
+  transition: all 0.5s;
+  color: #eee;
+  text-decoration: underline;
+}
