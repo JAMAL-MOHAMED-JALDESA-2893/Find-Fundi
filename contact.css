@@ -1,10 +1,23 @@
-.ContactFundi {
+.contactFundi {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 50vh;
+    height: 100%;
     width: 100%;
+    
+}
+
+.contactHeading {
+    margin: top 500px;
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #7c8266;
+    text-align:center;
+    font-family: "Monoton", cursive;
+    opacity: 0.7;
+    text-shadow: 2rem 2rem 4rem rgb(160, 155, 155);
 }
 
 .container {
@@ -49,4 +62,18 @@
     border: none;
     border-radius: 2rem;
     box-shadow:  2px 2px 2px #ddd, inset -0.1rem;
+    max-width: 100%;
+    min-width: 70%;
 }
+
+.contactForm input[type="submit"]:hover {
+    background-color: #7c8266;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    color: #444;
+    margin-top: 5rem;
+  }
