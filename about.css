@@ -1,51 +1,4 @@
-*{
-    background-color: #babaa8;
-}
-.section-head{
-    font-family: monoton;
-    text-transform: uppercase;
-    align-items: center;
-    justify-content: center;
 
-}
-.scetion-1{
- width: 100%;
- padding: 20px;
- display: flex;
- height: 100vw;
- flex-direction: column;
- justify-content: space-between;
-}
-.wrapper{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 80%;
-}
-.member{
-  width: 35rem;
-  background-color: #adab8a;
-  padding: 1rem 1rem 2rem 1rem;
-  box-shadow: 1rem 1rem 2rem rgb(140, 146, 115), -1rem -1rem 2rem rgb(140, 149, 113);
-  position: relative;
-  opacity: 0.7;
-  transition: opacity 0.5s;
-}
-.member:hover{
-    opacity: 1;
-}
-.member:first-child{
-    align-items: flex-start;
-}
-.member:last-child{
-    align-items: flex-end;
-}
-/* styling image1 */
-.img{
-    width: 100%;
-    border-radius:0.5rem;
-}
-/* styling name  */
 .member-name{
   font-size: 2.3rem;
   font-weight: 700;
@@ -57,7 +10,7 @@
 .member-name span{
     font-size: 25px;
 }  
-.specialization{
+/* .specialization{
   display: flex;
   justify-content: space-between;
   margin: 1rem 0 2rem 0;
@@ -65,7 +18,7 @@
 .specialization li{
     font-size: 1.5rem;
     color: #505050;
-}
+} */
 .btn{
 
     background-color: #7c8266;
@@ -75,29 +28,110 @@
     font-size: 1.5rem;
     letter-spacing: 0.2rem;
 }
-/* styling the about btn that contain more details of the team expert */
-.about-btn{
-    width: 4rem;
-    height: 4rem;
-    background-color:#7c8266;
-    position: absolute;
-    top:-1rem;
-    right: -1rem;
-    border-radius: 5rem;
-    display: flex;
-    align-items: center;
-    padding: 0.5rem;
-    cursor: pointer;
-    z-index: 50;
-    transition: transform 0.5s;
+
+/* other part */
+
+.section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5rem 0;
 }
-.about-collapse{
-    width: 100%;
-    height: 0.1rem;
-    background-color: #fff;  
+
+.wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 70%;
 }
-/* when clicked it show the contect of that specific person */
-.Exposer{
+
+.member {
+  width: 35rem;
+  background-color: #adab8a;
+  padding: 1rem 1rem 2rem 1rem;
+  box-shadow: 1rem 1rem 2rem rgb(140, 146, 115), -1rem -1rem 2rem rgb(140, 149, 113);
+  position: relative;
+  opacity: 0.7;
+  transition: opacity 0.5s;
+}
+
+.member:hover {
+  opacity: 1;
+}
+
+.member:first-child {
+  align-self: flex-start;
+}
+
+.member:last-child {
+  align-self: flex-end;
+}
+
+.member-img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.member-name {
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #796717;
+  margin-top: 2rem;
+}
+
+.member-name span {
+  font-size: 1.7rem;
+}
+
+.member-skills {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0 2rem 0;
+}
+
+.member-skills li {
+  font-size: 1.5rem;
+  color: #505050;
+}
+
+.btn {
+  background-color: #7c8266;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+}
+
+.more-btn {
+  width: 4rem;
+  height: 4rem;
+  background-color:#7c8266;
+  position: absolute;
+  top: -1rem;
+  right: -1rem;
+  border-radius: 5rem;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  cursor: pointer;
+  z-index: 50;
+  transition: transform 0.5s;
+}
+
+.change.story-btn {
+  transform: rotate(405deg);
+}
+
+.story-btn-line {
+  width: 100%;
+  height: 0.1rem;
+  background-color: #fff;
+}
+
+.story {
   width: 100%;
   height: 100%;
   background-color: rgba(206, 194, 194, 0.9);
@@ -114,20 +148,73 @@
   border-radius: 50rem 0 50rem 50rem;
   transition: all 0.5s;
 }
-/* styling store heading */
-.seemore{
-    font-size: 4rem;
+
+.change.story {
+  transform: scale(1);
+  border-radius: 0;
+}
+
+.story-heading {
+  font-size: 4rem;
   font-weight: 700;
   color:#7c8266;
   margin-bottom: 2rem;
 }
-.seemore-exposer{
- font-size: 1.8rem;
+
+.story-paragraph {
+  font-size: 1.8rem;
   color:#7c8266;
   text-align: justify;
   letter-spacing: 0.1rem;
   text-indent: 2rem;
 }
-.footer{
-    padding: 0.9rem;
+/* End of Section 3 */
+
+/* Responsive */
+@media (max-width: 1400px) {
+  .floating-bg {
+    top: -120vw;
+  }
+
+  
+  .section-3 {
+    height: auto;
+  }
+
+  .wrapper {
+    flex-wrap: wrap;
+  }
+
+  .member {
+    margin: 5rem 10rem;
+  }
+
+  .section-heading {
+    margin-bottom: 5rem;
+  }
 }
+
+@media (max-width: 550px) {
+  html {
+    font-size: 45%;
+  }
+
+  
+
+  .section-heading {
+    font-size: 6rem;
+  }
+
+ 
+  .member {
+    margin: 5rem 0;
+  }
+
+  
+
+  .scroll-up-btn {
+    bottom: 2rem;
+    right: 2rem;
+  }
+}
+/* End of Responsive */
