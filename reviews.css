@@ -80,8 +80,6 @@
   /* End of Section 2 */
 
   /* Common Styles */
-
-
 * {
   margin: 0;
   padding: 0;
@@ -92,16 +90,12 @@
   font-family: "Bellota Text", cursive;
   font-weight: 400;
 }
- /*
+ 
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
 
-.container {
-  width: 100%;
-  overflow-x: hidden;
-}
 
 .section-heading {
   font-size: 10rem;
