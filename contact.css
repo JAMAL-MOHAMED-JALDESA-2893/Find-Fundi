@@ -30,3 +30,23 @@
     transform: rotateY(-25deg);
     transition: all 0.5s;
 }
+
+.contactForm input {
+    margin: 2px;
+    padding: 5px;
+    font-size: 20px;
+    letter-spacing: 5px;
+    border: none;
+    border-radius: 2rem;
+    box-shadow:  2px 2px 2px #ddd, inset -0.1rem;
+}
+
+.contactForm textarea {
+    margin: 2px;
+    padding: 5px;
+    font-size: 20px;
+    letter-spacing: 5px;
+    border: none;
+    border-radius: 2rem;
+    box-shadow:  2px 2px 2px #ddd, inset -0.1rem;
+}
