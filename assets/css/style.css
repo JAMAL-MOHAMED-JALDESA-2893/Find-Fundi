@@ -58,9 +58,7 @@ html {
   letter-spacing: 0.2rem;
   color: #262c0e;
   width: 1.5rem;
- /* word-wrap: break-word;*/
   text-align: center;
-  /*transition: all 0.1s;*/
 }
 
 .navbar-link:hover {
@@ -69,4 +67,21 @@ html {
   transition: all 0.5s;
   color: #eee;
   text-decoration: underline;
+}
+
+.section-1-heading {
+  font-size: 8rem;
+  font-family: "Monoton", cursive;
+  position: absolute;
+  top: 18vw;
+  left: 50%;
+  transform: translateX(-50%);
+  text-shadow: 0.3rem 0.3rem 0.3rem rgb(56, 50, 50);
+  color: #4b4e3c;
+  background-color: #62b173;
+  width: 45rem;
+  text-align: center;
+  padding: 0.8rem 1.6rem;
+  border-radius: 0.8rem;
+  opacity: 1;
 }
