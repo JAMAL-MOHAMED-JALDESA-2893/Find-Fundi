@@ -23,7 +23,7 @@ html {
 }
 
 .contactHeading {
-    font-size: 5rem;
+    font-size: 10rem;
     font-weight: bold;
     text-transform: uppercase;
     color: #7c8266;
@@ -32,6 +32,84 @@ html {
     opacity: 0.7;
     text-shadow: 1rem 1rem 4rem rgb(160, 155, 155), -1rem -1rem 4rem rgb(160, 155, 155);
 }
+.footer{
+    background-color: #7C8266;
+    position: relative;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+  }
+  .mainfooter{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 10px;
+  }
+  .testing{
+    font-size: 20px;
+    background-color: #656E46;
+    border-radius: 4px;
+    color: white;
+    flex: 3;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 20px;
+    text-align: center;
+  }
+  .testing>i{
+    font-size: 80px;
+    color: black;
+  }
+  .comment{
+    flex:3;
+    background-color: #656E46;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 5px;
+    border-radius: 4px;
+  }
+  .contact{
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex: 3;
+    background-color: #656E46;
+    border-radius: 4px;
+    flex-direction: column;
+  }
+  textarea{
+    border-radius: 5px;
+    padding: 10px;
+    opacity: 0.6;
+  }
+  #leave{
+    color: white;
+    font-size: 3rem;
+  }
+  .contact>p{
+    font-size: 30px;
+    color: white;
+  }
+  .contact>i{
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+  }
+  .contact-site{
+    color: #F5F3ED;
+    padding-left: 10px;
+  }
+  .contact-site:hover{
+  color: red;
+  font-size: 30px;
+  box-shadow: 2px 2px 5px darkorange,-2px -2px 5px darkorange ;
+  }
+  .copy{
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    font-family:robotic ;
+  }
 /*End Find Fundi Ccommon Styling */
 
 /* Start Responsive Media */
@@ -55,6 +133,13 @@ html {
   
     .copyright {
       margin: 5rem 0 4rem 0;
+    }
+
+    .footer {
+        height: auto;
+    }
+    .mainfooter {
+        height: auto;
     }
   }
   
@@ -104,6 +189,23 @@ html {
       bottom: 2rem;
       right: 2rem;
     }
+
+    .mainfooter{
+        display: flex;
+        flex-direction: column;
+      }
+      .comment{
+        margin: auto;
+      }
+      .copy{
+        font-size: 25px;
+      }
+      .testing{
+        margin: 10px;
+      }
+      .comment{
+        margin:10px;
+      }
   }
   /* End Media Responsive */
 
