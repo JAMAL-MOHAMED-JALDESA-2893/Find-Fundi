@@ -1,3 +1,214 @@
+/*Start Find Fundi Ccommon Styling */
+@import url("https://fonts.googleapis.com/css2?family=Bellota+Text:wght@300;400;700&family=Monoton&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  outline: none;
+  font-family: "Bellota Text", cursive;
+  font-weight: 400;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.contactHeading {
+    font-size: 10rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #7c8266;
+    text-align:center;
+    font-family: "Monoton", cursive;
+    opacity: 0.7;
+    text-shadow: 1rem 1rem 4rem rgb(160, 155, 155), -1rem -1rem 4rem rgb(160, 155, 155);
+}
+.footer{
+    background-color: #7C8266;
+    position: relative;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+  }
+  .mainfooter{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 10px;
+  }
+  .testing{
+    font-size: 20px;
+    background-color: #656E46;
+    border-radius: 4px;
+    color: white;
+    flex: 3;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 20px;
+    text-align: center;
+  }
+  .testing>i{
+    font-size: 80px;
+    color: black;
+  }
+  .comment{
+    flex:3;
+    background-color: #656E46;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 5px;
+    border-radius: 4px;
+  }
+  .contact{
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex: 3;
+    background-color: #656E46;
+    border-radius: 4px;
+    flex-direction: column;
+  }
+  textarea{
+    border-radius: 5px;
+    padding: 10px;
+    opacity: 0.6;
+  }
+  #leave{
+    color: white;
+    font-size: 3rem;
+  }
+  .contact>p{
+    font-size: 30px;
+    color: white;
+  }
+  .contact>i{
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+  }
+  .contact-site{
+    color: #F5F3ED;
+    padding-left: 10px;
+  }
+  .contact-site:hover{
+  color: red;
+  font-size: 30px;
+  box-shadow: 2px 2px 5px darkorange,-2px -2px 5px darkorange ;
+  }
+  .copy{
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    font-family:robotic ;
+  }
+/*End Find Fundi Ccommon Styling */
+
+/* Start Responsive Media */
+@media (max-width: 1400px) {
+    .contactHeading {
+      font-size: 8rem;
+      margin-bottom: 10rem;
+    }
+  
+    .fcontainer {
+      height: 60%;
+    }
+  
+    .contactForm {
+      transform: translateY(0);
+    }
+  
+    .contactForm:hover {
+      transform: translateY(-1rem);
+    }
+  
+    .copyright {
+      margin: 5rem 0 4rem 0;
+    }
+
+    .footer {
+        height: auto;
+    }
+    .mainfooter {
+        height: auto;
+    }
+  }
+  
+  @media (max-width: 750px) {
+    html {
+      font-size: 50%;
+    }
+  
+    .contactHeading {
+      margin-bottom: 5rem;
+    }
+  }
+  
+  @media (max-width: 550px) {
+    html {
+      font-size: 45%;
+    }
+  
+    .contactHeading {
+      font-size: 6rem;
+    }
+  
+    .contactFundi {
+      height: auto;
+    }
+  
+    .fcontainer {
+      background-color: transparent;
+      box-shadow: none;
+    }
+  
+    .contactForm {
+      box-shadow: 1rem 1rem 2rem #aaa;
+    }
+  
+    .contactForm:hover {
+      box-shadow: 2rem 2rem 3rem #aaa;
+    }
+  
+    .copyright {
+      font-size: 1.8rem;
+      margin: 5rem;
+      text-align: center;
+    }
+  
+    .scroll-up-btn {
+      bottom: 2rem;
+      right: 2rem;
+    }
+
+    .mainfooter{
+        display: flex;
+        flex-direction: column;
+      }
+      .comment{
+        margin: auto;
+      }
+      .copy{
+        font-size: 25px;
+      }
+      .testing{
+        margin: 10px;
+      }
+      .comment{
+        margin:10px;
+      }
+  }
+  /* End Media Responsive */
+
 .contactFundi {
     display: flex;
     flex-direction: column;
@@ -8,18 +219,7 @@
     background-color: #BABAA8;
 }
 
-.contactHeading {
-    font-size: 5rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #7c8266;
-    text-align:center;
-    font-family: "Monoton", cursive;
-    opacity: 0.7;
-    text-shadow: 1rem 1rem 4rem rgb(160, 155, 155), -1rem -1rem 4rem rgb(160, 155, 155);
-}
-
-.container {
+.fcontainer {
     background-color: #e5e9ff;
     display: flex;
     justify-content: space-evenly;
@@ -91,4 +291,27 @@
       border-collapse: separate;
   }
 
+  .scroll-up-btn {
+    width: 5rem;
+    height: 5rem;
+    background-color: rgba(56, 55, 55, 0.8);
+    position: fixed;
+    bottom: 5rem;
+    right: 5rem;
+    border-radius: 50%;
+    font-size: 1.6rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.5s;
+  }
+  
+  .scroll-up-btn:hover {
+    background-color: #8c8e8f;
+  }
 
+  .scroll-up-btn {
+    bottom: 2rem;
+    right: 2rem;
+  }
