@@ -36,8 +36,8 @@ html {
 .section-1 {
   width: 100%;
   height: 100vh;
-  background-color: #62b173;
-  background-image: url("/assets/img/we-fix-it.png");
+  background-color: #6d6d59;
+  background-image: url("/assets/we-fix-it.png");
   background-size: contain;
   background-repeat: no-repeat;
 
@@ -56,17 +56,18 @@ html {
   font-size: 2.2rem;
   font-weight: 700;
   letter-spacing: 0.2rem;
-  color: #262c0e;
+  color: #1f2507;
   width: 1.5rem;
   text-align: center;
 }
 
 .navbar-link:hover {
   width: 10rem;
-  background-color: #7c8266;
+  background-color: #292e16;
   transition: all 0.5s;
   color: #eee;
   text-decoration: underline;
+  border-radius: 5px;
 }
 
 .section-1-heading {
@@ -76,9 +77,9 @@ html {
   top: 18vw;
   left: 50%;
   transform: translateX(-50%);
-  text-shadow: 0.3rem 0.3rem 0.3rem rgb(56, 50, 50);
-  color: #4b4e3c;
-  background-color: #62b173;
+  text-shadow: 0.3rem 0.3rem 0.3rem rgb(185, 31, 31);
+  color: #6e7062;
+  background-color: #414e44;
   width: 45rem;
   text-align: center;
   padding: 0.8rem 1.6rem;
@@ -91,6 +92,7 @@ html {
   top: 70%;
   left: 50%;
   transform: translateX(-50%);
+  text-align:center ;
 }
 
 .logo  {
@@ -98,4 +100,97 @@ html {
   color: rgba(50, 231, 255, 0.8);
   text-shadow: 0.1rem 0.1rem 0.2rem rgb(102, 85, 85), -0.1rem -0.1rem 0.2rem rgb(66, 53, 53);
 }
-/* End of Section 1 */
+
+
+/* Responsive*/
+
+/* Responsive */
+@media (max-width: 1400px) {
+ 
+
+  .section-1-heading {
+    font-size: 6rem;
+    top: 25vw;
+    width: 70rem;
+  }
+
+  .navbar-link {
+    font-size: 2rem;
+  }
+
+  .logo {
+    top: 55%;
+  }
+
+  .logo i {
+    font-size: 10rem;
+  }
+
+  .section-heading {
+    font-size: 8rem;
+    margin-bottom: 10rem;
+  }
+
+
+  
+
+@media (max-width: 1150px) {
+  
+  .section-1-heading {
+    font-size: 4rem;
+    top: 30vw;
+    width: 55rem;
+  }
+
+  .logo  {
+    font-size: 8rem;
+  }
+}
+
+@media (max-width: 950px) {
+  
+
+  .section-1-heading {
+    top: 35vw;
+  }
+
+  .navbar {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 750px) {
+  html {
+    font-size: 50%;
+  }
+
+ 
+  .section-1-heading {
+    top: 45vw;
+  }
+
+  .section-heading {
+    margin-bottom: 5rem;
+  }
+}
+
+@media (max-width: 550px) {
+  html {
+    font-size: 45%;
+  }
+
+
+  .section-1-heading {
+    top: 65vw;
+    width: 42rem;
+    font-size: 3.5rem;
+  }
+
+  .section-heading {
+    font-size: 6rem;
+  }
+}
+
+
+
+}
