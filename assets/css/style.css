@@ -43,6 +43,10 @@ html {
   position: relative;
 }
 
+img{
+  position: absolute;
+}
+
 .navbar {
   position: relative;
   z-index: 20;
