@@ -203,7 +203,7 @@ h4{
   padding-left: 20px;
   opacity: 1;
 }
-/* End of Section 3 */
+/* End of Section */
 
 /* Responsive */
 @media (max-width: 1400px) {
@@ -212,7 +212,7 @@ h4{
   }
 
   
-  .section-3 {
+  .section {
     height: auto;
   }
 
@@ -253,3 +253,18 @@ h4{
   }
 }
 /* End of Responsive */
+/* styling footer */
+.footer{
+  background-color: #796717;
+  position: relative;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  
+}
+
+/* .responsive{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 200px);
+  grid-template-rows: repeat(2,300px);
+} */
