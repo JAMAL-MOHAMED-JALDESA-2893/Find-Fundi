@@ -1,11 +1,25 @@
-.contactFundi {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 130vh;
-    width: 100%;
-    background-color: #BABAA8;
+/*Start Find Fundi Ccommon Styling */
+@import url("https://fonts.googleapis.com/css2?family=Bellota+Text:wght@300;400;700&family=Monoton&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  outline: none;
+  font-family: "Bellota Text", cursive;
+  font-weight: 400;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .contactHeading {
@@ -18,8 +32,92 @@
     opacity: 0.7;
     text-shadow: 1rem 1rem 4rem rgb(160, 155, 155), -1rem -1rem 4rem rgb(160, 155, 155);
 }
+/*End Find Fundi Ccommon Styling */
 
-.container {
+/* Start Responsive Media */
+@media (max-width: 1400px) {
+    .contactHeading {
+      font-size: 8rem;
+      margin-bottom: 10rem;
+    }
+  
+    .fcontainer {
+      height: 60%;
+    }
+  
+    .contactForm {
+      transform: translateY(0);
+    }
+  
+    .contactForm:hover {
+      transform: translateY(-1rem);
+    }
+  
+    .copyright {
+      margin: 5rem 0 4rem 0;
+    }
+  }
+  
+  @media (max-width: 750px) {
+    html {
+      font-size: 50%;
+    }
+  
+    .contactHeading {
+      margin-bottom: 5rem;
+    }
+  }
+  
+  @media (max-width: 550px) {
+    html {
+      font-size: 45%;
+    }
+  
+    .contactHeading {
+      font-size: 6rem;
+    }
+  
+    .contactFundi {
+      height: auto;
+    }
+  
+    .fcontainer {
+      background-color: transparent;
+      box-shadow: none;
+    }
+  
+    .contactForm {
+      box-shadow: 1rem 1rem 2rem #aaa;
+    }
+  
+    .contactForm:hover {
+      box-shadow: 2rem 2rem 3rem #aaa;
+    }
+  
+    .copyright {
+      font-size: 1.8rem;
+      margin: 5rem;
+      text-align: center;
+    }
+  
+    .scroll-up-btn {
+      bottom: 2rem;
+      right: 2rem;
+    }
+  }
+  /* End Media Responsive */
+
+.contactFundi {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 130vh;
+    width: 100%;
+    background-color: #BABAA8;
+}
+
+.fcontainer {
     background-color: #e5e9ff;
     display: flex;
     justify-content: space-evenly;
@@ -91,4 +189,27 @@
       border-collapse: separate;
   }
 
+  .scroll-up-btn {
+    width: 5rem;
+    height: 5rem;
+    background-color: rgba(56, 55, 55, 0.8);
+    position: fixed;
+    bottom: 5rem;
+    right: 5rem;
+    border-radius: 50%;
+    font-size: 1.6rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.5s;
+  }
+  
+  .scroll-up-btn:hover {
+    background-color: #8c8e8f;
+  }
 
+  .scroll-up-btn {
+    bottom: 2rem;
+    right: 2rem;
+  }
